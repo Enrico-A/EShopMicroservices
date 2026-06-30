@@ -7,20 +7,19 @@
     <UserSecretsId>2387cd14-723e-4bb0-af54-4d81a15ce4a9</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
     <PackageReference Include="Carter" Version="10.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+    <PackageReference Include="Npgsql" Version="10.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="Products\DeleteProduct\" />
-    <Folder Include="Products\GetProductByCategory\" />
-    <Folder Include="Products\GetProductById\" />
-    <Folder Include="Products\GetProducts\" />
     <Folder Include="Products\UpdateProduct\" />
   </ItemGroup>
 
